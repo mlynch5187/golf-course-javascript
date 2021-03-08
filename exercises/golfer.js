@@ -9,6 +9,14 @@ class Golfer  {
   calculateAvg(par)  {
     return `I usually shoot a ${par + this.handicap} on average.`
   }
+
+  playRound(course) {
+    if (course.difficulty === 'hard') {
+      this.frustration += 500;
+    } else if (course.difficulty === 'moderate') {
+      this.frustration += 100;
+    }
+  }
 }
 
 module.exports = Golfer;
