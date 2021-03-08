@@ -3,7 +3,7 @@ var GolfCourse = require('../exercises/golf-course.js');
 var Golfer = require('../exercises/golfer.js')
 
 describe('Golf Course', function () {
-  it.skip('should have a name and difficulty', function () {
+  it('should have a name and difficulty', function () {
     var golfCourse = new GolfCourse('Overland GC', 'moderate');
     assert.equal(golfCourse.name, 'Overland GC');
     assert.equal(golfCourse.difficulty, 'moderate');
