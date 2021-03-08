@@ -22,6 +22,10 @@ class Golfer  {
   hitTheRange() {
     this.confidence += 10;
   }
+
+  marvel(course)  {
+    return `I love the ${course.features[0]} and ${course.features[1]} on this course!`
+  }
 }
 
 module.exports = Golfer;
