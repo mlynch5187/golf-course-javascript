@@ -3,6 +3,7 @@ class Golfer  {
     obj = obj || {};
     this.name = obj.name;
     this.handicap = obj.handicap;
+    this.frustration = 0;
   }
 }
 
