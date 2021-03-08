@@ -137,13 +137,11 @@ describe('Golfer', function () {
     assert.equal(golfer5.marvel(golfCourse2), 'I love the undulating greens and creative layout on this course!')
   });
 
-  it.skip('should have their performance on a hole affect their frustration', function () {
+  it('should have their performance on a hole affect their frustration', function () {
 
     // **NOTE: Scores below 0 are considered excellent, scores of even par (0) are good, scores above 0 are considered bad**
 
     var golfer1 = new Golfer({ name: 'Zach', handicap: 18 });
-
-
     assert.equal(golfer1.frustration, 0);
 
     var shot1 = golfer1.whatYaShoot(4);
