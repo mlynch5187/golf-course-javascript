@@ -1,6 +1,6 @@
 var assert = require('chai').assert;
-var GolfCourse = require('./golf-course.js');
-var Golfer = require('./golfer.js')
+var GolfCourse = require('../exercises/golf-course.js');
+var Golfer = require('../exercises/golfer.js')
 
 describe('Golf Course', function () {
   it('should have a name and difficulty', function () {
