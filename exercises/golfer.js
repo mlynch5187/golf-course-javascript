@@ -4,6 +4,7 @@ class Golfer  {
     this.name = obj.name;
     this.handicap = obj.handicap;
     this.frustration = 0;
+    this.confidence = 0;
   }
 
   calculateAvg(par)  {
@@ -16,6 +17,10 @@ class Golfer  {
     } else if (course.difficulty === 'moderate') {
       this.frustration += 100;
     }
+  }
+
+  hitTheRange() {
+    this.confidence += 10;
   }
 }
 
