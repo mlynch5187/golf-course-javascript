@@ -1,6 +1,8 @@
 class Golfer  {
-  constructor() {
-
+  constructor(obj) {
+    obj = obj || {};
+    this.name = obj.name;
+    this.handicap = obj.handicap;
   }
 }
 
